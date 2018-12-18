@@ -1,0 +1,250 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	color: inherit;
+}
+body{
+	background: url('../images/colored_body_top2.png');
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.jingxuan{
+	color: #fff;
+	font-size: 16px;
+	font-weight:400;
+}
+#wrap{
+	margin: 30px auto;
+	margin-bottom: 10px;
+	width: 940px;
+	height: 353px;
+	position: relative;
+	/* overflow: hidden; */
+	box-shadow: 0 0 7px 0 #000;
+}
+#tem{
+	display: none;
+}
+#wrap .gameUrl{
+	/* width: 940px;
+	height: 353px; */
+	display: block;
+	position: relative;
+	/* top: 0;
+	left: 0; */
+	/* z-index: -1; */
+}
+.box{
+	width: 940px;
+	height: 353px;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.left{
+	width: 616px;
+	height: 353px;
+	margin-right: 4px;
+	box-shadow: rgba(10, 2, 11, 0.96) 5px 0 0px 0px;
+}
+.left img{
+	width: 100%;
+	height: 353px;
+}
+.right{
+	width: 320px;
+	height: 353px;
+	background-image: url("../images/background_maincap_2.jpg");
+}
+.right h3{
+	font-weight: 400;
+	font-size: 20px;
+	color: #fff;
+	padding-left: 10px;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+#prev,#next{
+	width: 45px;
+	height: 108px;
+	cursor: pointer;
+	background: rgba(0,0,0,0.6);
+	border-radius: 4px;
+	position: absolute;
+	top: 35%;
+}
+#prev div,#next div{
+	width: 23px;
+	height: 36px;
+	background-image: url("../images/arrows.png");
+	margin: 36px auto;
+	opacity: .7;
+	transition: all .5s;
+}
+#prev{
+	background: -webkit-linear-gradient( left, rgba( 0, 0, 0, 0.3) 5%,rgba( 0, 0, 0, 0) 95%);
+	left: -46px;
+}
+#next{
+	background: -webkit-linear-gradient( left, rgba( 0, 0, 0, 0) 5%,rgba( 0, 0, 0, 0.3) 95%);
+	right: -46px;
+}
+#prev div{
+	background-position: -23px 0;
+}
+#next div{
+	background-position: 0 0;
+}
+#prev:hover div,#next:hover div{
+	transform: scale(1.1);
+	opacity: 1;
+}
+.gameName{
+	height: 50px;
+	line-height: 1em;
+	font-weight: 400;
+	font-size: 24px;
+	padding: 0 15px;
+	color: #fff;
+	margin-top: 15px;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+.gameImg{
+	width: 320px;
+	/* padding-left: 10px; */
+}
+.gameImg li{
+	list-style: none;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 150px;
+	height: 86px;
+	float: left;
+}
+.gameImg li img{
+	display: block;
+	width: 150px;
+	height: 86px;
+}
+.gamePrice{
+	padding: 0 10px;
+	color: #acdbf5;
+	font-size: 12px;
+	margin-top: 35px;
+}
+.discount{
+	display: none;
+	padding: 0 5px;
+	color: #a4d007;
+	background: #4c6b22;
+}
+.originprice{
+	color: #7193a6;
+	text-decoration: line-through;
+}
+.platform img{
+	float: left;
+	width: 20px;
+	height: 20px;
+	display: none;
+}
+.aside{
+	width: 266px;
+	padding: 20px;
+	position: absolute;
+	left: -313px;
+	top: 0;
+	background-color: #c6d4df;
+	display: none;
+}
+.triangle{
+	width: 0;
+	border-left: 7px solid #c6d4df;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	position: absolute;
+	top: 30px;
+	right: -7px;
+}
+.name_game{
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 5px;
+	color: #333;
+}
+.date{
+	font-size: 12px;
+	color: #333;
+	margin-bottom: 5px;
+}
+.aside_img{
+	width: 266px;
+	height: 150px;
+	margin-bottom: 5px;
+	position: relative;
+}
+.aside_img li{
+	list-style: none;
+	width: 266px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.aside_img img{
+	display: block;
+	width: 100%;
+	height: 150px;
+}
+.gameevaluate{
+	padding: 5px;
+	font-size: 12px;
+	background-color: #8e8c8c;
+	color: #c6d4df;
+	margin-bottom: 10px;
+}
+.label{
+	height: 50px;
+	font-size: 12px;
+	color: #333;
+}
+.labelContent{
+	height: 22px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.labelContent span{
+	float: left;
+	line-height: 16px;
+	margin: 3px;
+	padding: 1px 4px;
+	background-color: #96a3ae;
+	color: #fff;
+	border-radius: 3px;
+}
+.dot{
+	margin-top: 10px;
+	text-align: center;
+}
+.dot span{
+	display: inline-block;
+	width: 20px;
+	height: 10px;
+	transition:background-color 0.2s;
+	background-color: hsla(202,60%,100%,0.2);
+	border-radius: 3px;
+	margin: 0 4px;
+	cursor: pointer;
+}
